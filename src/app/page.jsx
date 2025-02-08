@@ -6,7 +6,6 @@ import BlogSection from '@/components/BlogSection';
 export default function Home() {
     return (
         <main className="min-h-screen">
-            <Navbar />
             
             {/* Hero Section */}
             <HeroSection />
@@ -85,7 +84,6 @@ export default function Home() {
                 </div>
             </section>
 
-            <Footer />
         </main>
     );
 } 

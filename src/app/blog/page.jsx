@@ -1,7 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+
 import BlogModal from '@/components/BlogModal';
 import { fetchWithAuth } from '@/utility/api';
 
@@ -34,7 +33,6 @@ export default function BlogPage() {
 
     return (
         <main className="min-h-screen">
-            <Navbar />
 
             {/* Blog Hero Section */}
             <section className="pt-20 bg-purple-900 text-white">
@@ -126,7 +124,6 @@ export default function BlogPage() {
                 />
             )}
 
-            <Footer />
         </main>
     );
 } 

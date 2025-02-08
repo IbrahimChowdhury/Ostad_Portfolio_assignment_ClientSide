@@ -1,7 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+
 import { fetchWithAuth } from '@/utility/api';
 
 export default function ServicesPage() {
@@ -26,7 +25,6 @@ export default function ServicesPage() {
 
     return (
         <main className="min-h-screen">
-            <Navbar />
 
             {/* Services Hero Section */}
             <section className="pt-20 bg-purple-900 text-white">
@@ -168,7 +166,6 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <Footer />
         </main>
     );
 } 
