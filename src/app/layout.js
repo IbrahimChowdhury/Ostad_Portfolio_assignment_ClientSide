@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/navbar";
-import Footer from "@/components/footer";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -21,10 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} font-sans antialiased`}
         cz-shortcut-listen="true"
       >
-        <NavBar/>
+        <Navbar/>
         {children}
         <Footer />
       </body>

@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -32,5 +35,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
