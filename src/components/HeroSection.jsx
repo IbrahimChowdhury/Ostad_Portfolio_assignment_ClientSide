@@ -7,19 +7,19 @@ const HeroSection = () => {
 
     const slides = [
         {
-            image: '/images/hero1.jpg',
+            image: '/s1.jpg',
             title: 'Welcome to YourBrand',
             description: 'Creating innovative solutions for tomorrow\'s challenges',
             buttonText: 'Get Started'
         },
         {
-            image: '/images/hero2.jpg',
+            image: '/s2.jpg',
             title: 'Expert Solutions',
             description: 'Delivering excellence in every project we undertake',
             buttonText: 'Our Services'
         },
         {
-            image: '/images/hero3.jpg',
+            image: '/s3.jpg',
             title: 'Creative Design',
             description: 'Bringing your vision to life with stunning designs',
             buttonText: 'Learn More'
@@ -44,6 +44,14 @@ const HeroSection = () => {
                     }`}
                 >
                     {/* Background Image */}
+                    <Image
+                        src={slide.image}
+                        alt={slide.title}
+                        layout="fill"
+                        objectFit="cover"
+                        quality={100}
+                        className="absolute inset-0"
+                    />
                     <div className="absolute inset-0 bg-black/50" />
                     <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
                     
