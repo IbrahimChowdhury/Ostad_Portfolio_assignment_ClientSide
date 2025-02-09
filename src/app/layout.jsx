@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} font-sans antialiased`}
         cz-shortcut-listen="true"
       >
-        <Navbar />
+        <Navbar/>
         <div className="pt-16">
           {children}
         </div>
